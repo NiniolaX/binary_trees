@@ -1,9 +1,9 @@
-#Binary Trees
-##Introduction
+# Binary Trees
+## Introduction
 This is the repository for my Binary Trees project in the ALX Software
 Engineering Programme.
 
-#Task Files
+# Task Files
 1. 0-binary_tree_node.c - Contains a function *binary_tree_node* which creates
 a binary tree node.
 2. 1-binary_tree_insert_left.c - Contains a function *binary_tree_insert_left*
