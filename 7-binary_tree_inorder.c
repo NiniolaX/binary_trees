@@ -17,16 +17,16 @@ void binary_tree_inorder(const binary_tree_t *tree, void (*func)(int))
 
 /**
  * bt_inorder_helper - Goes through a binary tree recursively in preorder
- * @tree: Pointer to tree to traverse
+ * @subtree: Pointer to tree to traverse
  * @func: Pointer to function which performs an action on each node
  * Return: Nothing
  */
-void bt_inorder_helper(const binary_tree_t *tree, void (*func)(int))
+void bt_inorder_helper(const binary_tree_t *subtree, void (*func)(int))
 {
-	if (tree->left)
-		bt_inorder_helper(tree->left, func);
-	if (tree)
-		func(tree->n);
-	if (tree->right)
-		bt_inorder_helper(tree->right, func);
+	if (subtree->left)
+		bt_inorder_helper(subtree->left, func);
+	if (subtree)
+		func(subtree->n);
+	if (subtree->right)
+		bt_inorder_helper(subtree->right, func);
 }
