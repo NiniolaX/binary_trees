@@ -1,2 +1,4 @@
 #Ignore test files
 binary_tree_print.c
+0-main.c
+0-node
