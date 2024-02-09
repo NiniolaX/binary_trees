@@ -1,8 +1,8 @@
 #include "binary_trees.h"
 
+int bt_is_perfect_helper(const binary_tree_t *tree, size_t tree_height);
 size_t binary_tree_depth(const binary_tree_t *tree);
 size_t binary_tree_height(const binary_tree_t *tree);
-int bt_is_perfect_helper(const binary_tree_t *tree, size_t tree_height);
 
 /**
  * binary_tree_is_perfect - Checks if a binary tree is perfect
@@ -43,7 +43,7 @@ int bt_is_perfect_helper(const binary_tree_t *tree, size_t tree_height)
 			return (1);
 	}
 
-	/* Check that subtrees have 2 children and children are perfect */
+	/* Check that subtrees with 2 children have both children perfect */
 	if (tree->left && tree->right)
 	{
 		left_is_perfect = bt_is_perfect_helper(tree->left, tree_height);
